@@ -78,7 +78,7 @@ byte motor_action_previous = 0b00000000;
  *    - bit[1] = right turn
  *    - bit[0] = vacuum switch
  *    
- * buf[5] = motor speed control (0 to 255. 0 is slowest, 255 is fastest)
+ * buf[5] = motor speed control (170 to 255. 170 is slowest, 255 is fastest)
  */
 byte buf[6];
 
@@ -107,38 +107,6 @@ void loop() {
   check_data();
   move();
   vacuum_control();
-  
-
-
-  // Check state of vehicle
-//  Serial.print("Motor speed = ");
-//  Serial.println(motor_speed);
-//  Serial.print("Vacuum = ");
-//  if (vacuum_on)
-//    Serial.println("ON");
-//  else
-//    Serial.println("OFF");
-//
-//  Serial.print("Action = ");
-//  switch (motor_action_current) {
-//  case 0b00010000:
-//    Serial.println("ACCELERATE");
-//    break;
-//  case 0b00001000:
-//    Serial.println("DECELERATE");
-//    break;
-//  case 0b00000100:
-//    Serial.println("LEFT");
-//    break;
-//  case 0b00000010:
-//    Serial.println("RIGHT");
-//    break;
-//  default:
-//    Serial.println("NONE");
-//    break;
-//  }
-//  Serial.println();
-  
 }
 
 /*
@@ -206,7 +174,7 @@ bool check_vehicle_ID() {
  * 
  * Vehicle drives as commanded by the controller. PWM dictates
  * motor speed.
- *  *    - bit[4] = accelerate
+ *    - bit[4] = accelerate
  *    - bit[3] = decelerate
  *    - bit[2] = left turn
  *    - bit[1] = right turn
