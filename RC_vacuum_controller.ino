@@ -68,7 +68,7 @@ const uint64_t controller = 0xE8E8F0F0E1LL; // Controller address
  *    - bit[1] = right turn
  *    - bit[0] = vacuum switch
  *    
- * command[5] = motor speed control (0 to 255. 0 is slowest, 255 is fastest)
+ * command[5] = motor speed control (170 to 255. 170 is slowest, 255 is fastest)
  */
 byte command[6];
 
