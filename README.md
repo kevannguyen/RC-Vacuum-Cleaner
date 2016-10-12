@@ -35,3 +35,8 @@ Radio controlled vacuum cleaning vehicle built with Arduino Uno R3 and nRF24L01 
 - Vehicle receives instructions from controller to move and/or turn on vacuum fan
 - H-bridge allows for vehicle motors to go in either direction
 - NPN transistor acts as switch to turn on/off vacuum fan
+
+#Video Demonstration
+[RC Vacuum Cleaner Demo](https://www.youtube.com/watch?v=dmlWOtPn2n8 "RC Vacuum Cleaner Demo")
+
+[RC Vehicle Movement Demo](https://www.youtube.com/watch?v=9YUVWv-RvW4 "RC Vehicle Movement Demo")
